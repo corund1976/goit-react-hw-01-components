@@ -1,7 +1,6 @@
 import s from './Profile.module.css';
 import PropTypes from 'prop-types';
 
-// function Profile({ name, tag, location, avatar, stats }) { 
 function Profile({ user }) {
   const { name, tag, location, avatar, stats } = user;
   const statsContent = Object.entries(stats).map(([key, value]) => {

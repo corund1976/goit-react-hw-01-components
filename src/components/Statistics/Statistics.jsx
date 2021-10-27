@@ -1,6 +1,6 @@
 import s from "./Statistics.module.css";
 import PropTypes from 'prop-types';
-import { getRandomRgbColor } from "./GetRandomColor";
+import { getRandomRgbColor } from "../../utils/GetRandomColor";
 
 function Statistics({ title, stats }) {
   const statisticsItem = stats.map(item => {
