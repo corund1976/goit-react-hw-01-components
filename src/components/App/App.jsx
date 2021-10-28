@@ -1,3 +1,4 @@
+import Container from '../Container/Container';
 import Profile from '../Profile/Profile';
 import Statistics from '../Statistics/Statistics';
 import FriendList from '../FriendList/FriendList';
@@ -12,7 +13,7 @@ import './App.css';
 
 function App() {
   return (
-    <>
+    <Container>
       <Profile
         user={user} />
       <Statistics
@@ -24,7 +25,7 @@ function App() {
         friends={friends} />
       <TransactionHistory
         items={transactions} />
-    </>
+    </Container>
   )
 }
 
