@@ -19,7 +19,7 @@ function Statistics({ title, stats }) {
         {statisticsItem}
       </ul>
     </section>);
-}
+};
 
 Statistics.propTypes = {
   title: PropTypes.string,
@@ -30,6 +30,6 @@ Statistics.propTypes = {
       percentage: PropTypes.number.isRequired
     }).isRequired
   )
-}
+};
 
 export default Statistics;

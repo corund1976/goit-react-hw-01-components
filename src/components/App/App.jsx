@@ -27,6 +27,6 @@ function App() {
         items={transactions} />
     </Container>
   )
-}
+};
 
 export default App;

@@ -12,7 +12,7 @@ function FriendListItem({ friends }) {
     );
   })
   );
-}
+};
 
 FriendListItem.propTypes = {
   friends: PropTypes.arrayOf(
@@ -23,6 +23,6 @@ FriendListItem.propTypes = {
       id: PropTypes.number.isRequired
     }).isRequired
   )
-}
+};
 
 export default FriendListItem;

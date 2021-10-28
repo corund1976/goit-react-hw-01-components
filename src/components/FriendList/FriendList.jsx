@@ -9,10 +9,12 @@ function FriendList({ friends }) {
         friends={friends}
       />
     </ul>);
-}
+};
 
 FriendList.propTypes = {
-  friends: PropTypes.arrayOf().isRequired
-}
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({})
+  ).isRequired
+};
 
 export default FriendList;
