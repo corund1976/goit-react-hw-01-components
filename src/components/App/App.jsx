@@ -1,4 +1,5 @@
 import Container from '../Container/Container';
+import Section from '../Section/Section';
 import Profile from '../Profile/Profile';
 import Statistics from '../Statistics/Statistics';
 import FriendList from '../FriendList/FriendList';
@@ -14,17 +15,23 @@ import './App.css';
 function App() {
   return (
     <Container>
-      <Profile
-        user={user} />
+      <Section>
+        <Profile
+          user={user} />
+      </Section>
       <Statistics
         title="Upload stats"
         stats={statisticalData} />
       <Statistics
-        stats={statisticalData}/>
-      <FriendList
-        friends={friends} />
-      <TransactionHistory
-        items={transactions} />
+        stats={statisticalData} />
+      <Section>          
+        <FriendList
+          friends={friends} />
+      </Section>    
+      <Section>    
+        <TransactionHistory
+          items={transactions} />
+      </Section>
     </Container>
   )
 };
